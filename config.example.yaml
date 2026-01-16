@@ -1,0 +1,22 @@
+# Square API Configuration
+square:
+  # Get your access token from: https://developer.squareup.com/apps
+  access_token: "YOUR_SQUARE_ACCESS_TOKEN"
+
+  # Environment: 'sandbox' or 'production'
+  environment: "production"
+
+  # Your cafe locations
+  locations:
+    - id: "LOCATION_ID_1"
+      name: "Cafe Location 1"
+    - id: "LOCATION_ID_2"
+      name: "Cafe Location 2"
+
+# Timezone for reports (PST/PDT)
+timezone: "America/Los_Angeles"
+
+# Peak hours for longest ticket time analysis
+peak_hours:
+  start: 11  # 11am
+  end: 14    # 2pm (14:00)
