@@ -29,11 +29,17 @@ env/
 ENV/
 
 # IDE
-.vscode/
 .idea/
 *.swp
 *.swo
 *~
+
+# VSCode - keep shared settings, ignore user-specific ones
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
 
 # OS
 .DS_Store
