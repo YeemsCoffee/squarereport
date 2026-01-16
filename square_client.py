@@ -1,5 +1,5 @@
 """Square API client wrapper."""
-from square.client import Client
+from square import Client
 from typing import List, Dict, Any, Optional
 from datetime import datetime, timedelta
 import pytz
