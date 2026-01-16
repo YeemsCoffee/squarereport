@@ -1,5 +1,9 @@
 # Square API Configuration
 square:
+  # Application ID (optional for most operations, but good to have)
+  # Get from: https://developer.squareup.com/apps
+  application_id: "YOUR_APPLICATION_ID"
+
   # Get your access token from: https://developer.squareup.com/apps
   access_token: "YOUR_SQUARE_ACCESS_TOKEN"
 
