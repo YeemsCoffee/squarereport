@@ -1,5 +1,5 @@
 """Square API client wrapper."""
-from square import Client
+from square.client import Client
 from typing import List, Dict, Any, Optional
 from datetime import datetime, timedelta
 import pytz
@@ -16,8 +16,11 @@ class SquareReportClient:
             access_token: Square API access token
             environment: 'sandbox' or 'production'
         """
+        # Initialize Square Client with new API structure
         self.client = Client(
-            access_token=access_token,
+            bearer_auth_credentials={
+                "access_token": access_token
+            },
             environment=environment
         )
         self.orders_api = self.client.orders
